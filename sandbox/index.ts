@@ -6,5 +6,7 @@ const run = async () => {
 		color: 'red',
 		year: 1950
 	});
+
+	const car = await client.hGetAll('car');
 };
 run();
