@@ -32,7 +32,7 @@ export const useSession: Handle = async ({ event, resolve }) => {
 	} else {
 		res.headers.set('set-cookie', unsetSession());
 	}
-
+	console.log({ sessionId }, '<=== session id');
 	return res;
 };
 
